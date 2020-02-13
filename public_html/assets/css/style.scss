@@ -1,0 +1,110 @@
+// Variables
+
+    //Colours
+    $dark : #1b1b1b;
+
+    //Fonts
+
+// Global styling
+nav{
+    background-color: $dark;
+}
+
+main{
+    padding-top: 30px;
+
+    form{
+
+        .btn, .btn-primary{
+            margin-top: 10px;
+        }
+
+        #height_in{
+            @media only screen and (max-width:767px){
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .row{
+        margin-top:30px;
+    }
+
+    #table-container{
+        max-height: 300px;
+        margin-top: 30px;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+
+        @media only screen and (max-width:1506px) {
+            position: relative;
+            bottom: unset;
+        }
+
+        .table-responsive-md{
+            width: 100%;
+        }
+
+        .row{
+            margin-top: unset;
+        }
+
+        #table-structure{
+            overflow: hidden;
+        }
+
+        // Fix the data table and allow for scrolling when there are multiple entries returned
+        #table-structure tbody {
+            height: 100%;
+            max-height: 457px;
+            overflow-y: auto;
+            width: 100%;
+        }
+        
+        #table-structure thead,
+        #table-structure tbody,
+        #table-structure tr,
+        #table-structure td,
+        #table-structure th {
+            display: block;
+        }
+        
+        #table-structure tbody td,
+        #table-structure tbody th,
+        #table-structure thead > tr > th {
+            float: left;
+            position: relative;
+        
+            &::after {
+                content: '';
+                clear: both;
+                display: block;
+            }
+        }
+
+        // Fix the data table and allow for scrolling - END
+        
+    }
+}
+
+// Top section specific styling
+#top-section{
+    height: 43vh;
+
+    @media only screen and (max-width:1506px) {
+        height: initial;
+    }
+
+    #chart-wrap{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+// Google chart style adjustments
+#columnchart_material{
+    width: 90%;
+    height: 100%;
+
+}

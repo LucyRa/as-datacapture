@@ -1,0 +1,87 @@
+nav {
+  background-color: #1b1b1b;
+}
+
+main {
+  padding-top: 30px;
+}
+main form .btn, main form .btn-primary {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 767px) {
+  main form #height_in {
+    margin-top: 20px;
+  }
+}
+main .row {
+  margin-top: 30px;
+}
+main #table-container {
+  max-height: 300px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1506px) {
+  main #table-container {
+    position: relative;
+    bottom: unset;
+  }
+}
+main #table-container .table-responsive-md {
+  width: 100%;
+}
+main #table-container .row {
+  margin-top: unset;
+}
+main #table-container #table-structure {
+  overflow: hidden;
+}
+main #table-container #table-structure tbody {
+  height: 100%;
+  max-height: 457px;
+  overflow-y: auto;
+  width: 100%;
+}
+main #table-container #table-structure thead,
+main #table-container #table-structure tbody,
+main #table-container #table-structure tr,
+main #table-container #table-structure td,
+main #table-container #table-structure th {
+  display: block;
+}
+main #table-container #table-structure tbody td,
+main #table-container #table-structure tbody th,
+main #table-container #table-structure thead > tr > th {
+  float: left;
+  position: relative;
+}
+main #table-container #table-structure tbody td::after,
+main #table-container #table-structure tbody th::after,
+main #table-container #table-structure thead > tr > th::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#top-section {
+  height: 43vh;
+}
+@media only screen and (max-width: 1506px) {
+  #top-section {
+    height: initial;
+  }
+}
+#top-section #chart-wrap {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#columnchart_material {
+  width: 90%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
